@@ -6,9 +6,9 @@
 
 package com.android.inputmethod.latin;
 
-import helium314.keyboard.latin.common.NativeSuggestOptions;
-import helium314.keyboard.latin.define.DecoderSpecificConstants;
-import helium314.keyboard.latin.utils.JniUtils;
+import theprime.primeboard.latin.common.NativeSuggestOptions;
+import theprime.primeboard.latin.define.DecoderSpecificConstants;
+import theprime.primeboard.latin.utils.JniUtils;
 
 import java.util.Locale;
 

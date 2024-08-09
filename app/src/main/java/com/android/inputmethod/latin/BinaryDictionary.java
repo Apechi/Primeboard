@@ -7,26 +7,26 @@
 package com.android.inputmethod.latin;
 
 import android.text.TextUtils;
-import helium314.keyboard.latin.utils.Log;
+import theprime.primeboard.latin.utils.Log;
 import android.util.SparseArray;
 
 import androidx.annotation.NonNull;
 
-import helium314.keyboard.latin.Dictionary;
-import helium314.keyboard.latin.NgramContext;
-import helium314.keyboard.latin.SuggestedWords.SuggestedWordInfo;
-import helium314.keyboard.latin.common.ComposedData;
-import helium314.keyboard.latin.common.Constants;
-import helium314.keyboard.latin.common.FileUtils;
-import helium314.keyboard.latin.common.InputPointers;
-import helium314.keyboard.latin.common.StringUtils;
-import helium314.keyboard.latin.makedict.DictionaryHeader;
-import helium314.keyboard.latin.makedict.FormatSpec.DictionaryOptions;
-import helium314.keyboard.latin.makedict.UnsupportedFormatException;
-import helium314.keyboard.latin.makedict.WordProperty;
-import helium314.keyboard.latin.settings.SettingsValuesForSuggestion;
+import theprime.primeboard.latin.Dictionary;
+import theprime.primeboard.latin.NgramContext;
+import theprime.primeboard.latin.SuggestedWords.SuggestedWordInfo;
+import theprime.primeboard.latin.common.ComposedData;
+import theprime.primeboard.latin.common.Constants;
+import theprime.primeboard.latin.common.FileUtils;
+import theprime.primeboard.latin.common.InputPointers;
+import theprime.primeboard.latin.common.StringUtils;
+import theprime.primeboard.latin.makedict.DictionaryHeader;
+import theprime.primeboard.latin.makedict.FormatSpec.DictionaryOptions;
+import theprime.primeboard.latin.makedict.UnsupportedFormatException;
+import theprime.primeboard.latin.makedict.WordProperty;
+import theprime.primeboard.latin.settings.SettingsValuesForSuggestion;
 import com.android.inputmethod.latin.utils.BinaryDictionaryUtils;
-import helium314.keyboard.latin.utils.JniUtils;
+import theprime.primeboard.latin.utils.JniUtils;
 import com.android.inputmethod.latin.utils.WordInputEventForPersonalization;
 
 import java.io.File;

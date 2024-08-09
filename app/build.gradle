@@ -7,11 +7,11 @@ android {
     buildToolsVersion = '35.0.0'
 
     defaultConfig {
-        applicationId "helium314.keyboard"
+        applicationId "theprime.primeboard"
         minSdkVersion 21
             targetSdkVersion 35
         versionCode 2201
-        versionName '2.2'
+        versionName '1.0'
         ndk {
             abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
         }
@@ -88,7 +88,7 @@ android {
         includeInBundle = false
     }
 
-    namespace "helium314.keyboard.latin"
+    namespace "theprime.primeboard.latin"
     lint {
         abortOnError true
     }

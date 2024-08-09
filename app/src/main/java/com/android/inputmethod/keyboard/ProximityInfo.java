@@ -7,14 +7,14 @@
 package com.android.inputmethod.keyboard;
 
 import android.graphics.Rect;
-import helium314.keyboard.latin.utils.Log;
+import theprime.primeboard.latin.utils.Log;
 
 import androidx.annotation.NonNull;
 
-import helium314.keyboard.keyboard.Key;
-import helium314.keyboard.keyboard.internal.TouchPositionCorrection;
-import helium314.keyboard.latin.common.Constants;
-import helium314.keyboard.latin.utils.JniUtils;
+import theprime.primeboard.keyboard.Key;
+import theprime.primeboard.keyboard.internal.TouchPositionCorrection;
+import theprime.primeboard.latin.common.Constants;
+import theprime.primeboard.latin.utils.JniUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;
