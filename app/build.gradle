@@ -26,24 +26,25 @@ android {
             jniDebuggable false
             renderscriptDebuggable false
             signingConfig signingConfigs.debug
+//            signingConfig signingConfigs.debug
         }
-        nouserlib { // same as release, but does not allow the user to provide a library
-            minifyEnabled true
-            shrinkResources false
-            debuggable false
-            jniDebuggable false
-            renderscriptDebuggable false
-        }
+//        nouserlib { // same as release, but does not allow the user to provide a library
+//            minifyEnabled true
+//            shrinkResources false
+//            debuggable false
+//            jniDebuggable false
+//            renderscriptDebuggable false
+//        }
         debug {
             minifyEnabled true
             jniDebuggable false
             applicationIdSuffix ".debug"
         }
-        runTests { // build variant for running tests on CI that skips tests known to fail
-            minifyEnabled true
-            jniDebuggable false
-        }
-        archivesBaseName = "HeliBoard_" + defaultConfig.versionName
+//        runTests { // build variant for running tests on CI that skips tests known to fail
+//            minifyEnabled true
+//            jniDebuggable false
+//        }
+        archivesBaseName = "Primeboard_" + defaultConfig.versionName
     }
 
     buildFeatures {
@@ -89,13 +90,12 @@ android {
     }
 
     namespace "theprime.primeboard.latin"
-    lint {
-        abortOnError true
-    }
+
 }
 
 dependencies {
 
+    implementation(project(":Adsmodul"))
     // androidx
     implementation 'androidx.core:core-ktx:1.13.1'
     implementation 'androidx.appcompat:appcompat:1.7.0'

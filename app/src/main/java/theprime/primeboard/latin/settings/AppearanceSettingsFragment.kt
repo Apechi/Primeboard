@@ -16,6 +16,8 @@ import androidx.core.util.TypedValueCompat
 import androidx.preference.ListPreference
 import androidx.preference.Preference
 import androidx.preference.TwoStatePreference
+import com.adsmedia.adsmodul.AdsHelper
+import com.adsmedia.adsmodul.utils.AdsConfig
 import theprime.primeboard.keyboard.KeyboardSwitcher
 import theprime.primeboard.keyboard.KeyboardTheme
 import theprime.primeboard.latin.R
@@ -45,6 +47,7 @@ class AppearanceSettingsFragment : SubScreenFragment() {
         if (it.resultCode != Activity.RESULT_OK) return@registerForActivityResult
         val uri = it.data?.data ?: return@registerForActivityResult
         loadImage(uri, false)
+
     }
 
     private val nightImageFilePicker = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
@@ -188,6 +191,7 @@ class AppearanceSettingsFragment : SubScreenFragment() {
                 val intent = Intent(Intent.ACTION_OPEN_DOCUMENT)
                     .addCategory(Intent.CATEGORY_OPENABLE)
                     .setType("image/*")
+                AdsHelper.showInterstitial(this.requireActivity(), AdsConfig.Interstitial_ID, AdsConfig.Interval)
                 if (night) nightImageFilePicker.launch(intent)
                 else dayImageFilePicker.launch(intent)
             }

@@ -12,6 +12,7 @@ import static android.preference.PreferenceActivity.EXTRA_SHOW_FRAGMENT;
 import android.content.Intent;
 import android.os.Bundle;
 
+import theprime.primeboard.latin.BuildConfig;
 import theprime.primeboard.latin.permissions.PermissionsManager;
 import theprime.primeboard.latin.utils.ActivityThemeUtils;
 import theprime.primeboard.latin.utils.NewDictionaryAdder;
@@ -20,6 +21,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+
+import com.adsmedia.adsmodul.AdsHelper;
+import com.adsmedia.adsmodul.utils.AdsConfig;
 
 public final class  SettingsActivity extends AppCompatActivity
         implements ActivityCompat.OnRequestPermissionsResultCallback {
@@ -47,6 +51,14 @@ public final class  SettingsActivity extends AppCompatActivity
                     .commit();
 
         ActivityThemeUtils.setActivityTheme(this);
+
+        AdsHelper.initializeAds(this, BuildConfig.APPLICATION_ID, AdsConfig.Game_App_ID);
+        AdsHelper.loadInterstitial(
+                this,
+                AdsConfig.Interstitial_ID
+        );
+
+
     }
 
     @Override

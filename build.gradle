@@ -5,6 +5,10 @@ buildscript {
     repositories {
         mavenCentral()
         google()
+        maven { url "https://jitpack.io" }
+        maven {
+            url "https://artifact.bytedance.com/repository/pangle"
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.5.1'
@@ -25,6 +29,7 @@ allprojects {
         google()
         mavenCentral()
         maven { url "https://jitpack.io" }
+        maven {url "https://artifact.bytedance.com/repository/pangle"}
     }
 }
 
