@@ -12,6 +12,7 @@
             android:id="@+id/clipboard_entry_pinned_icon"
             android:layout_width="@dimen/config_clipboard_pinned_icon_size"
             android:layout_height="@dimen/config_clipboard_pinned_icon_size"
+        android:layout_gravity="center_vertical"
             android:layout_marginVertical="8dp"
             android:layout_marginStart="4dp"/>
 
@@ -22,8 +23,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="6dp"
+        android:layout_gravity="center_vertical"
             android:layout_marginHorizontal="8dp"
             android:hapticFeedbackEnabled="false"
             android:soundEffectsEnabled="false"

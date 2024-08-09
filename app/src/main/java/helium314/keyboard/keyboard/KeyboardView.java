@@ -359,6 +359,8 @@ public class KeyboardView extends View {
             bgY = -padding.top;
             bgX = -padding.left;
         }
+
+
         background.setBounds(0, 0, bgWidth, bgHeight);
         canvas.translate(bgX, bgY);
         background.draw(canvas);

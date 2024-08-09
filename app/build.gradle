@@ -3,13 +3,13 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlinx-serialization'
 
 android {
-    compileSdk 34
-    buildToolsVersion = '34.0.0'
+    compileSdk 35
+    buildToolsVersion = '35.0.0'
 
     defaultConfig {
         applicationId "helium314.keyboard"
         minSdkVersion 21
-        targetSdkVersion 34
+            targetSdkVersion 35
         versionCode 2201
         versionName '2.2'
         ndk {
@@ -25,6 +25,7 @@ android {
             debuggable false
             jniDebuggable false
             renderscriptDebuggable false
+            signingConfig signingConfigs.debug
         }
         nouserlib { // same as release, but does not allow the user to provide a library
             minifyEnabled true
@@ -94,6 +95,7 @@ android {
 }
 
 dependencies {
+
     // androidx
     implementation 'androidx.core:core-ktx:1.13.1'
     implementation 'androidx.appcompat:appcompat:1.7.0'
@@ -107,6 +109,7 @@ dependencies {
 
     // color picker for user-defined colors
     implementation 'com.github.martin-stone:hsv-alpha-color-picker-android:3.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
 
     // test
     testImplementation 'junit:junit:4.13.2'

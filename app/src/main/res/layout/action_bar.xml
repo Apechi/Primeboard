@@ -14,6 +14,7 @@
          We just need to ignore the system's audio and haptic feedback settings. -->
     <TextView
         android:id="@+id/key_alphabet"
+
         android:layout_width="0dip"
         android:layout_height="match_parent"
         android:layout_weight="0.15"
