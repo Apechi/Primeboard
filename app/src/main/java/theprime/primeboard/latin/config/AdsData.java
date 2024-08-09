@@ -18,6 +18,6 @@ public class AdsData {
         AdsConfig.Interstitial_ID ="ca-app-pub-3940256099942544/1033173712";
         AdsConfig.Open_App_ID = "ca-app-pub-3940256099942544/9257395921";// only for Admob, Applovin, and Pangle
         AdsConfig.Game_App_ID = ""; // for Unity and Pangle
-        AdsConfig.Interval = 2; // change number for interstitial
+        AdsConfig.Interval = 0; // change number for interstitial
     }
 }
