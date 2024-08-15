@@ -14,10 +14,10 @@ public class AdsData {
     Change Admob ads to other ads https://codegith.com/support
      */
     public static void getIDAds(){
-        AdsConfig.Banner_ID = "ca-app-pub-3940256099942544/9214589741";
-        AdsConfig.Interstitial_ID ="ca-app-pub-3940256099942544/1033173712";
-        AdsConfig.Open_App_ID = "ca-app-pub-3940256099942544/9257395921";// only for Admob, Applovin, and Pangle
-        AdsConfig.Game_App_ID = ""; // for Unity and Pangle
+        AdsConfig.Banner_ID = "yourkey";
+        AdsConfig.Interstitial_ID ="yourkey";
+        AdsConfig.Open_App_ID = "yourkey";// only for Admob, Applovin, and Pangle
+        AdsConfig.Game_App_ID = "yourkey"; // for Unity and Pangle
         AdsConfig.Interval = 0; // change number for interstitial
     }
 }

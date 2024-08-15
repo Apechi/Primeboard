@@ -52,8 +52,8 @@ public final class  SettingsActivity extends AppCompatActivity
 
         ActivityThemeUtils.setActivityTheme(this);
 
-        AdsHelper.initializeAds(this, BuildConfig.APPLICATION_ID, AdsConfig.Game_App_ID);
-        AdsHelper.loadInterstitial(
+        AdsHelper.initializeAdsPrime(this, BuildConfig.APPLICATION_ID, AdsConfig.Game_App_ID);
+        AdsHelper.loadInterstitialPrime(
                 this,
                 AdsConfig.Interstitial_ID
         );

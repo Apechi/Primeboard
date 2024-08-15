@@ -14,6 +14,7 @@ constraintlayout = "2.1.4"
 pangle = "6.1.0.7.0"
 playServicesAds = "23.2.0"
 unity = "4.12.1.0"
+adsmob = "1.0.0"
 lifecycleProcess = "2.8.4"
 userMessagingPlatform = "3.0.0"
 
@@ -30,6 +31,7 @@ material = { group = "com.google.android.material", name = "material", version.r
 activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 pangle = { module = "com.google.ads.mediation:pangle", version.ref = "pangle" }
+adsmob = {module = "com.github.saputra1337:ModulAdsAdmob", version.ref = "adsmob"}
 play-services-ads = { module = "com.google.android.gms:play-services-ads", version.ref = "playServicesAds" }
 unity = { module = "com.google.ads.mediation:unity", version.ref = "unity" }
 lifecycle-process = { group = "androidx.lifecycle", name = "lifecycle-process", version.ref = "lifecycleProcess" }

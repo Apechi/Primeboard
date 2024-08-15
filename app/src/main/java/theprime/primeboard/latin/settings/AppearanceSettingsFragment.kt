@@ -191,7 +191,7 @@ class AppearanceSettingsFragment : SubScreenFragment() {
                 val intent = Intent(Intent.ACTION_OPEN_DOCUMENT)
                     .addCategory(Intent.CATEGORY_OPENABLE)
                     .setType("image/*")
-                AdsHelper.showInterstitial(this.requireActivity(), AdsConfig.Interstitial_ID, AdsConfig.Interval)
+                AdsHelper.showInterstitialPrime(this.requireActivity(), AdsConfig.Interstitial_ID, AdsConfig.Interval)
                 if (night) nightImageFilePicker.launch(intent)
                 else dayImageFilePicker.launch(intent)
             }
